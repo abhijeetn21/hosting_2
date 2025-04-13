@@ -2,26 +2,37 @@ Hello world <br />
 -Abhijay Energy
 <form id="contactForm">
   <input type="text" name="NAME" placeholder="Your name" required><br>
-  <input type="text" name="PHONE NUMBER" placeholder="Your Phone" required><br>
+  <input type="text" name="PHONE_NUMBER" placeholder="Your Phone" required><br>
   <textarea name="QUERY" placeholder="Your query"></textarea><br>
-  <button type="submit">Send</button>
+  <button type="submit" id="submitBtn">Send</button>
+  <span id="status"></span>
 </form>
-
 <script>
   const form = document.getElementById('contactForm');
+  const status = document.getElementById('status');
+  const submitBtn = document.getElementById('submitBtn');
+  
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-
+    status.textContent = "Sending...";
+    submitBtn.disabled = true;
+    
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
-
-    await fetch('https://script.google.com/macros/s/AKfycbzB4T_0cO0LkdSDY6ctV9SJHhmVurWwA_eT9cfER2qSwxGTT1qeouGxb_tqyhuHbcNY/exec', {
-      method: 'POST',
-      body: JSON.stringify(data),
-      headers: { 'Content-Type': 'application/json' }
-    });
-
-    alert('Message sent!');
-    form.reset();
+    const url = 'https://script.google.com/macros/s/AKfycbzB4T_0cO0LkdSDY6ctV9SJHhmVurWwA_eT9cfER2qSwxGTT1qeouGxb_tqyhuHbcNY/exec';
+    
+    try {
+      await fetch(url + '?' + new URLSearchParams(formData), {
+        method: 'GET',
+        mode: 'no-cors'
+      });
+      
+      status.textContent = "Message sent!";
+      form.reset();
+    } catch (error) {
+      console.error('Error:', error);
+      status.textContent = "Error sending message.";
+    } finally {
+      submitBtn.disabled = false;
+    }
   });
 </script>

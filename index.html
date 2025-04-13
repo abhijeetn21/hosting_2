@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PM Surya Ghar Muft Bijli Yojana | ÄbhiJay Energy LLP</title>
+  <title>PM Surya Ghar Muft Bijli Yojana | AbhiJay Energy LLP</title>
+  <meta name="description" content="AbhiJay Energy LLP offers solar solutions in Guwahati, Kamrup Metro, and Assam with subsidies up to ₹1,30,800 for residential consumers. Call +91 98640 77001 for a free consultation.">
+  <meta name="keywords" content="solar panels Guwahati, solar energy Assam, rooftop solar Kamrup, solar subsidy India, AbhiJay Energy LLP">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -37,78 +39,114 @@
       float: right;
       cursor: pointer;
     }
+    .form-section {
+      padding: 20px;
+    }
+    .form-section label {
+      display: block;
+      margin-top: 10px;
+    }
+    .form-section input, .form-section select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    .form-section button {
+      margin-top: 15px;
+      padding: 10px 20px;
+    }
+    .subsidy-info {
+      background-color: #e0ffe0;
+      padding: 15px;
+      margin: 20px;
+      border-left: 5px solid #00cc00;
+    }
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 20px;
+    }
+    .image-gallery img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>PM Surya Ghar Muft Bijli Yojana</h1>
+  <header>
+    <h1>AbhiJay Energy LLP</h1>
+    <p>83A, By Lane 6, Borthakur Mill Road, Guwahati 7 | +91 98640 77001</p>
+  </header>
   <nav>
-    <a href="#overview">Overview</a>
-    <a href="#benefits">Benefits</a>
-    <a href="#eligibility">Eligibility</a>
+    <a href="#about">About</a>
+    <a href="#scheme">Scheme Details</a>
     <a href="#contact">Contact</a>
   </nav>
-</header>
+  <main>
+    <section id="about">
+      <h2>About PM Surya Ghar Muft Bijli Yojana</h2>
+      <p>This scheme provides subsidies for installing rooftop solar panels, aiming to empower households with sustainable energy solutions.</p>
+    </section>
+    <section id="scheme">
+      <h2>Scheme Details</h2>
+      <ul>
+        <li>Up to 2 kW – Rs. 30,000 per kW</li>
+        <li>2 to 3 kW – Additional Rs. 18,000 per kW</li>
+        <li>Above 3 kW – Maximum Rs. 78,000</li>
+      </ul>
+    </section>
+    <section class="subsidy-info">
+      <strong>Up to ₹1,30,800 subsidy applicable for residential consumers. Call for free consultation.</strong>
+    </section>
+    <section class="form-section">
+      <h2>Get a Quote</h2>
+      <form action="mailto:abhijayenergy@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="Full Name" required>
 
-<main>
-  <section id="overview">
-    <h2>Overview</h2>
-    <p>
-      The PM Surya Ghar Muft Bijli Yojana is an initiative by the Government of India to promote rooftop solar installations. It aims to provide up to 300 units of free electricity per month to 1 crore households.
-    </p>
-  </section>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="Email Address" required>
 
-  <section id="benefits">
-    <h2>Benefits</h2>
-    <ul>
-      <li>Subsidy of ₹30,000 for 1kW systems.</li>
-      <li>Subsidy of ₹60,000 for 2kW systems.</li>
-      <li>Subsidy of ₹78,000 for 3kW systems.</li>
-      <li>Reduction in electricity bills.</li>
-      <li>Contribution to a greener environment.</li>
-    </ul>
-  </section>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="Phone Number" required>
 
-  <section id="eligibility">
-    <h2>Eligibility</h2>
-    <ul>
-      <li>Must be an Indian citizen.</li>
-      <li>Own a house with a suitable rooftop.</li>
-      <li>Have a valid electricity connection.</li>
-      <li>Should not have availed any other solar subsidy.</li>
-    </ul>
-  </section>
+        <label for="electricity-bill">Last Month's Electricity Bill Amount:</label>
+        <input type="text" id="electricity-bill" name="Electricity Bill Amount" required>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>ÄbhiJay Energy LLP</strong></p>
-    <p>83A, By Lane 6, Borthakur Mill Road, Guwahati 7</p>
-    <p>Phone: +91 98640 77001</p>
-  </section>
-</main>
+        <label for="roof-type">Roof Type:</label>
+        <select id="roof-type" name="Roof Type" required>
+          <option value="">--Select Roof Type--</option>
+          <option value="Flat Roof">Flat Roof</option>
+          <option value="Sloped Roof">Sloped Roof</option>
+          <option value="Tin Shed">Tin Shed</option>
+          <option value="Other">Other</option>
+        </select>
 
-<footer>
-  <p>&copy; 2025 ÄbhiJay Energy LLP. All rights reserved.</p>
-</footer>
-
-<!-- Popup -->
-<div class="popup" id="startupPopup">
-  <div class="popup-content">
-    <span class="close-popup" onclick="document.getElementById('startupPopup').style.display='none'">&times;</span>
-    <h2>Welcome to ÄbhiJay Energy LLP</h2>
-    <p>Learn more about the PM Surya Ghar Muft Bijli Yojana and how you can benefit from solar energy.</p>
-  </div>
-</div>
-
-<script>
-  window.onload = function() {
-    document.getElementById('startupPopup').style.display = 'flex';
-  };
-</script>
-
-</body>
-</html>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section class="image-gallery">
+      <h2>Our Installations</h2>
+      <img src="image1.jpg" alt="Super Elevated Solar Structure">
+      <img src="image2.jpg" alt="Tin Roof Solar Installation">
+      <img src="image3.jpg" alt="Residential Solar Panel Installation">
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Phone: +91 98640 77001</p>
+      <p>Address: 83A, By Lane 6, Borthakur Mill Road, Guwahati 7</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 AbhiJay Energy LLP</p>
+  </footer>
+  <div class="popup" id="startupPopup">
+    <div class="popup-content">
+      <span
+::contentReference[oaicite:1]{index=1}
+ 
 
 <form id="contactForm">
   <input type="text" name="NAME" placeholder="Your name" required><br>

@@ -1,1 +1,26 @@
 Hello world
+<form id="contactForm">
+  <input type="text" name="NAME" placeholder="Your name" required><br>
+  <input type="email" name="PHONE NUMBER" placeholder="Your Phone" required><br>
+  <textarea name="QUERY" placeholder="Your query"></textarea><br>
+  <button type="submit">Send</button>
+</form>
+
+<script>
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    await fetch('https://script.google.com/macros/s/AKfycbyYzsp0NjicTW3I4Z5GW2tcJeXwEcuGXw7o8HXlW1-fUhRp3e3MrkLaqsdn3h-BCwJU/exec', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: { 'Content-Type': 'application/json' }
+    });
+
+    alert('Message sent!');
+    form.reset();
+  });
+</script>

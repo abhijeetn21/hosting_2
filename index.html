@@ -3,109 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abhijay Energy LLP | Solar Power Solutions</title>
+  <title>PM Surya Ghar Muft Bijli Yojana | ÄbhiJay Energy LLP</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
       color: #333;
     }
-
-    header {
-      background: #00796b;
-      color: white;
-      padding: 1.5rem 2rem;
-      text-align: center;
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      justify-content: center;
+      align-items: center;
     }
-
-    nav {
-      background: #004d40;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      background: url('https://images.unsplash.com/photo-1581091012184-7f2c7b37d02e') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .section h2 {
-      color: #00796b;
-    }
-
-    footer {
-      background: #004d40;
-      color: white;
-      text-align: center;
+    .popup-content {
+      background: #fff;
       padding: 20px;
+      border-radius: 5px;
+    }
+    .close-popup {
+      float: right;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Abhijay Energy LLP</h1>
-    <p>Powering Tomorrow, Today</p>
-  </header>
-
+<header>
+  <h1>PM Surya Ghar Muft Bijli Yojana</h1>
   <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
+    <a href="#overview">Overview</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#eligibility">Eligibility</a>
     <a href="#contact">Contact</a>
   </nav>
+</header>
 
-  <div class="hero">
-    <h1>Clean Energy for a Brighter Future</h1>
-    <p>Solar Power Solutions Tailored for You</p>
-  </div>
-
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>Abhijay Energy LLP is a leading solar energy provider dedicated to delivering affordable, clean, and efficient solar systems. We specialize in custom solar setups for residential, commercial, and industrial use, driving a sustainable energy future.</p>
+<main>
+  <section id="overview">
+    <h2>Overview</h2>
+    <p>
+      The PM Surya Ghar Muft Bijli Yojana is an initiative by the Government of India to promote rooftop solar installations. It aims to provide up to 300 units of free electricity per month to 1 crore households.
+    </p>
   </section>
 
-  <section id="services" class="section">
-    <h2>Our Services</h2>
+  <section id="benefits">
+    <h2>Benefits</h2>
     <ul>
-      <li>Residential Rooftop Solar Installations</li>
-      <li>Commercial & Industrial Solar Systems</li>
-      <li>Solar Panel Maintenance & Cleaning</li>
-      <li>Energy Consulting & Audits</li>
+      <li>Subsidy of ₹30,000 for 1kW systems.</li>
+      <li>Subsidy of ₹60,000 for 2kW systems.</li>
+      <li>Subsidy of ₹78,000 for 3kW systems.</li>
+      <li>Reduction in electricity bills.</li>
+      <li>Contribution to a greener environment.</li>
     </ul>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>Email: info@abhijayenergy.com</p>
-    <p>Phone: +91-XXXXXXXXXX</p>
-    <p>Address: [Your Office Address Here]</p>
+  <section id="eligibility">
+    <h2>Eligibility</h2>
+    <ul>
+      <li>Must be an Indian citizen.</li>
+      <li>Own a house with a suitable rooftop.</li>
+      <li>Have a valid electricity connection.</li>
+      <li>Should not have availed any other solar subsidy.</li>
+    </ul>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Abhijay Energy LLP. All rights reserved.</p>
-  </footer>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>ÄbhiJay Energy LLP</strong></p>
+    <p>83A, By Lane 6, Borthakur Mill Road, Guwahati 7</p>
+    <p>Phone: +91 98640 77001</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 ÄbhiJay Energy LLP. All rights reserved.</p>
+</footer>
+
+<!-- Popup -->
+<div class="popup" id="startupPopup">
+  <div class="popup-content">
+    <span class="close-popup" onclick="document.getElementById('startupPopup').style.display='none'">&times;</span>
+    <h2>Welcome to ÄbhiJay Energy LLP</h2>
+    <p>Learn more about the PM Surya Ghar Muft Bijli Yojana and how you can benefit from solar energy.</p>
+  </div>
+</div>
+
+<script>
+  window.onload = function() {
+    document.getElementById('startupPopup').style.display = 'flex';
+  };
+</script>
 
 </body>
 </html>

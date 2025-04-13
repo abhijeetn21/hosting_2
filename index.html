@@ -15,7 +15,7 @@ Hello world <br />
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
-    await fetch('https://script.google.com/macros/s/AKfycbyYzsp0NjicTW3I4Z5GW2tcJeXwEcuGXw7o8HXlW1-fUhRp3e3MrkLaqsdn3h-BCwJU/exec', {
+    await fetch('https://script.google.com/macros/s/AKfycbzB4T_0cO0LkdSDY6ctV9SJHhmVurWwA_eT9cfER2qSwxGTT1qeouGxb_tqyhuHbcNY/exec', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: { 'Content-Type': 'application/json' }

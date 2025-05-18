@@ -2,185 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PM Surya Ghar Muft Bijli Yojana | AbhiJay Energy LLP</title>
-  <meta name="description" content="AbhiJay Energy LLP offers solar solutions in Guwahati, Kamrup Metro, and Assam with subsidies up to ₹1,30,800 for residential consumers. Call +91 98640 77001 for a free consultation.">
-  <meta name="keywords" content="solar panels Guwahati, solar energy Assam, rooftop solar Kamrup, solar subsidy India, AbhiJay Energy LLP">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      background-color: #f4f4f4;
-      padding: 20px;
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
-    }
-    .popup {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.5);
-      justify-content: center;
-      align-items: center;
-    }
-    .popup-content {
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-    }
-    .close-popup {
-      float: right;
-      cursor: pointer;
-    }
-    .form-section {
-      padding: 20px;
-    }
-    .form-section label {
-      display: block;
-      margin-top: 10px;
-    }
-    .form-section input, .form-section select {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-    }
-    .form-section button {
-      margin-top: 15px;
-      padding: 10px 20px;
-    }
-    .subsidy-info {
-      background-color: #e0ffe0;
-      padding: 15px;
-      margin: 20px;
-      border-left: 5px solid #00cc00;
-    }
-    .image-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding: 20px;
-    }
-    .image-gallery img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhijay Energy LLP - Solar EPC Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
   <header>
-    <h1>AbhiJay Energy LLP</h1>
-    <p>83A, By Lane 6, Borthakur Mill Road, Guwahati 7 | +91 98640 77001</p>
+    <img src="ABHIJAY RED CLEAN LOGO big white.png" alt="Abhijay Energy LLP Logo" class="logo" />
+    <h1>ABHIJAY ENERGY LLP</h1>
+    <h2>Solar EPC Solutions in Assam</h2>
   </header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#scheme">Scheme Details</a>
-    <a href="#contact">Contact</a>
-  </nav>
+
   <main>
-    <section id="about">
-      <h2>About PM Surya Ghar Muft Bijli Yojana</h2>
-      <p>This scheme provides subsidies for installing rooftop solar panels, aiming to empower households with sustainable energy solutions.</p>
+    <section id="intro">
+      <h3>Welcome to Abhijay Energy LLP</h3>
+      <p>We provide top-tier solar EPC services in Guwahati and across Assam. Be a part of the PM Surya Ghar Scheme and save with solar today!</p>
+      <img src="home-solar.jpg" alt="Home Solar System" class="responsive-img" />
+      <img src="industrial-solar.jpg" alt="Industrial Solar System" class="responsive-img" />
     </section>
-    <section id="scheme">
-      <h2>Scheme Details</h2>
-      <ul>
-        <li>Up to 2 kW – Rs. 48,000 per kW</li>
-        <li>2 to 3 kW – Additional Rs. 34,800 per kW</li>
-        <li>Above 3 kW – Maximum Rs. 1,30,800</li>
-      </ul>
-    </section>
-    <section class="subsidy-info">
-      <strong>Up to ₹1,30,800 subsidy applicable for residential consumers. Call for free consultation.</strong>
-    </section>
-    <section class="form-section">
-      <h2>Get a Quote</h2>
-      <form action="mailto:abhijayenergy@gmail.com" method="post" enctype="text/plain">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="Full Name" required>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="Email Address" required>
+    <section id="contact">
+      <h3>Contact Us</h3>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="Phone Number" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-        <label for="electricity-bill">Last Month's Electricity Bill Amount:</label>
-        <input type="text" id="electricity-bill" name="Electricity Bill Amount" required>
-
-        <label for="roof-type">Roof Type:</label>
-        <select id="roof-type" name="Roof Type" required>
-          <option value="">--Select Roof Type--</option>
-          <option value="Flat Roof">Flat Roof</option>
-          <option value="Sloped Roof">Sloped Roof</option>
-          <option value="Tin Shed">Tin Shed</option>
-          <option value="Other">Other</option>
-        </select>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
 
         <button type="submit">Submit</button>
+        <p id="formResponse"></p>
       </form>
     </section>
-    <section class="image-gallery">
-      <h2>Our Installations</h2>
-      <img src="image1.jpg" alt="Super Elevated Solar Structure">
-      <img src="image2.jpg" alt="Tin Roof Solar Installation">
-      <img src="image3.jpg" alt="Residential Solar Panel Installation">
-    </section>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Phone: +91 98640 77001</p>
-      <p>Address: 83A, By Lane 6, Borthakur Mill Road, Guwahati 7</p>
-    </section>
   </main>
-  <footer>
-    <p>&copy; 2025 AbhiJay Energy LLP</p>
-  </footer>
-  <div class="popup" id="startupPopup">
-    <div class="popup-content">
-      <span
-::contentReference[oaicite:1]{index=1}
- 
 
-<form id="contactForm">
-  <input type="text" name="NAME" placeholder="Your name" required><br>
-  <input type="text" name="PHONE_NUMBER" placeholder="Your Phone" required><br>
-  <textarea name="QUERY" placeholder="Your query"></textarea><br>
-  <button type="submit" id="submitBtn">Send</button>
-  <span id="status"></span>
-</form>
-<script>
-  const form = document.getElementById('contactForm');
-  const status = document.getElementById('status');
-  const submitBtn = document.getElementById('submitBtn');
-  
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    status.textContent = "Sending...";
-    submitBtn.disabled = true;
-    
-    const formData = new FormData(form);
-    const url = 'https://script.google.com/macros/s/AKfycbwfI8RrKytQotaajOuhMfso76AxxJuIZade9r75fpPhqrYVWTTAsjUW-ZQ8Sdsj9LRn/exec';
-    
-    try {
-      await fetch(url + '?' + new URLSearchParams(formData), {
-        method: 'GET',
-        mode: 'no-cors'
+  <footer>
+    <p>&copy; 2025 Abhijay Energy LLP. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Track page visit
+    fetch('https://your-server-url.com/api/track-visit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        page: window.location.pathname,
+        timestamp: new Date().toISOString(),
+      })
+    });
+
+    // Form submission to Google Form (via POST)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLScWhBLJ50-gyys_pOT5cJ4f4Sflr3h7xTDofVMKtI6I4wuA-g/formResponse';
+      const formData = new FormData();
+      formData.append('entry.1234567890', name); // Replace entry.XXX with actual IDs
+      formData.append('entry.2345678901', email);
+      formData.append('entry.3456789012', message);
+
+      fetch(formURL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+      })
+      .then(() => {
+        document.getElementById('formResponse').textContent = "WE HAVE RECEIVED YOUR REQUEST. WE WILL CONTACT YOU.";
+        document.getElementById('contactForm').reset();
       });
-      
-      status.textContent = "Message sent!";
-      form.reset();
-    } catch (error) {
-      console.error('Error:', error);
-      status.textContent = "Error sending message.";
-    } finally {
-      submitBtn.disabled = false;
-    }
-  });
-</script>
+    });
+  </script>
+
+  <!-- Hidden SEO content -->
+  <div style="color: white; background: white; height: 0; overflow: hidden;">
+    <!-- Repeating hidden keywords for SEO -->
+    <p>
+      PM SURYA GHAR SCHEME SUBSIDY ASSAM SOLAR ASSAM SOLAR GUWAHATI BEST SOLAR VENDOR GUWAHATI
+      pm surya ghar scheme subsidy assam solar assam solar guwahati best solar vendor guwahati
+      <!-- Repeat 1000 times -->
+      <!-- You can use a backend script or JavaScript loop to generate this for deployment -->
+    </p>
+  </div>
+</body>
+</html>
